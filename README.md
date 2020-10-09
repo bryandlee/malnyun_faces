@@ -131,3 +131,17 @@ I attached the output of the FFHQ-trained styleGAN2 to the trained U-GAT-IT mode
 - Since the generative model essentially learns the distribution of prepared data, characteristics that are not present in the train data cannot be learned nor generated. If one wants to train an unsupervised image translation model that preserves the characteristics of a person (such as hairstyle, gender, etc.), one may need to prepare the data so that the distributions of the feature match, or approach it with a style transfer method that only changes the low-level texture.
 
 
+## Additional Results
+
+Have tried [Differentiable Augmentation for Data-Efficient GAN Training](https://github.com/mit-han-lab/data-efficient-gans), but ADA seems to work better in this case.
+
+| Method               | FID (30k iter)    | 
+| :------------------- | :----------------:|
+| Baseline             | 75.96             |
+| FreezeD              | 50.74             |
+| DiffAug              | 63.74             |
+| ADA                  | 46.23             |
+| FreezeD + DiffAug    | 45.24             |
+| **FreezeD + ADA**    | **38.94**         |
+
+
