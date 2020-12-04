@@ -146,6 +146,6 @@ I attached the output of the FFHQ-trained styleGAN2 to the trained U-GAT-IT mode
 
 
 
-* Training from scratch: [Unofficial Implementation](https://github.com/lucidrains/lightweight-gan) of [Towards Faster and Stabilized GAN Training for High-fidelity Few-shot Image Synthesis](https://openreview.net/forum?id=1Fqg133qRaI) converges after 150k, but the operations (cutout, translation) used in DiffAug seems to leak.
+* Training from scratch: The lightweight model from an [Unofficial Implementation](https://github.com/lucidrains/lightweight-gan) of [Towards Faster and Stabilized GAN Training for High-fidelity Few-shot Image Synthesis](https://openreview.net/forum?id=1Fqg133qRaI) converges after 150k, but the operations (cutout, translation) used in DiffAug seems to leak.
 
 <img src="./imgs/lgan-150k.jpg" width="640">
