@@ -133,7 +133,7 @@ I attached the output of the FFHQ-trained styleGAN2 to the trained U-GAT-IT mode
 
 ## Additional Results
 
-Have tried [Differentiable Augmentation for Data-Efficient GAN Training](https://github.com/mit-han-lab/data-efficient-gans), but ADA seems to work better in this case.
+* Have tried [Differentiable Augmentation for Data-Efficient GAN Training](https://github.com/mit-han-lab/data-efficient-gans), but ADA seems to work better in this case.
 
 | Method               | FID (30k iter)    | 
 | :------------------- | :----------------:|
@@ -145,3 +145,7 @@ Have tried [Differentiable Augmentation for Data-Efficient GAN Training](https:/
 | **FreezeD + ADA**    | **38.94**         |
 
 
+
+* Training from scratch: [Unofficial Implementation](https://github.com/lucidrains/lightweight-gan) of [Towards Faster and Stabilized GAN Training for High-fidelity Few-shot Image Synthesis](https://openreview.net/forum?id=1Fqg133qRaI) converges after 150k, but the operations (cutout, translation) used in DiffAug seems to leak.
+
+<img src="./imgs/lgan-150k.jpg" width="640">
