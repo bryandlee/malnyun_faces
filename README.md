@@ -128,7 +128,10 @@ I attached the output of the FFHQ-trained styleGAN2 to the trained U-GAT-IT mode
 ## Conclusion
 
 - By transferring the model that has already been trained on large data sharing similar semantics with small target dataset, it is possible to learn a 256 image generation model within half a day.
-- Since the generative model essentially learns the distribution of prepared data, characteristics that are not present in the train data cannot be learned nor generated. If one wants to train an unsupervised image translation model that preserves the characteristics of a person (such as hairstyle, gender, etc.), one may need to prepare the data so that the distributions of the feature match, or approach it with a style transfer method that only changes the low-level texture.
+- Since the generative model essentially learns the distribution of prepared data, characteristics that are not present in the train data cannot be learned nor generated. If one wants to train an unsupervised image translation model that preserves the characteristics of a person (such as hairstyle, gender, etc.), one may need to prepare the data so that the distributions of the feature match, or approach it with a style transfer method that only changes the low-level texture. A simple yet effective baseline: [FreezeG](https://github.com/bryandlee/FreezeG)
+
+<img src="./imgs/FreezeG.jpg">
+
 
 
 ## Additional Results
